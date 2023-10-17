@@ -198,7 +198,7 @@ header nav .nav-icon {
   height: 100px;
   display: flex;
   padding: 15px;
-  box-shadow: 5px 10px 10px gray;
+  box-shadow: 0 20px 20px rgba(128, 128, 128, 0.539);
 }
 
 .right-box-relative .right-box-absolute-b > div:first-of-type {
@@ -324,7 +324,7 @@ section {
 }
 
 .wrapper {
-  width:100%;
+  width: 100%;
   margin: auto;
   overflow: hidden;
   display: flex;
@@ -471,7 +471,7 @@ section {
   gap: 30px;
   flex-wrap: wrap;
   @media (max-width: 768px) {
-    justify-content:flex-end;
+    justify-content: flex-end;
   }
 }
 
@@ -513,10 +513,11 @@ footer .footer-section p {
 
 footer .footer-section > div:first-child img {
   cursor: pointer;
+  filter: contrast(30%);
 }
 
 footer .footer-section > div:first-child img:hover {
-  filter: grayscale(100%);
+  filter: contrast(100%);
 }
 
 footer .footer-section > div:not(:first-child) > *:not(:first-child) {
